@@ -1,8 +1,1 @@
 yfinance
-matplotlib.pyplot
-seaborn
-pandas_datareader.data
-pandas_datareader
-sklearn.preprocessing
-keras.models
-keras.layers
