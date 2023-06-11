@@ -4,4 +4,4 @@ seaborn
 pandas_datareader
 pandas_datareader
 scikit-learn
-keras
+tensorflow
