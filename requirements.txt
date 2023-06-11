@@ -3,5 +3,5 @@ matplotlib
 seaborn
 pandas_datareader
 pandas_datareader
-sklearn
+sklearn.preprocessing
 keras
