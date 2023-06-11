@@ -1,8 +1,7 @@
 yfinance
 matplotlib
 seaborn
-pandas_datareader.data
 pandas_datareader
-sklearn.preprocessing
-keras.models
-keras.layers
+pandas_datareader
+sklearn
+keras
