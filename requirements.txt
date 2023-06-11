@@ -1,5 +1,5 @@
 yfinance
-matplotlib.pyplot
+matplotlib
 seaborn
 pandas_datareader.data
 pandas_datareader
