@@ -19,7 +19,7 @@ st.set_page_config(
     layout = "wide" #'centered'
 )
 
-st.title("Analisis dan Prediksi saham UNILEVER INDONESIA dan ASTRA INTERNASIONAL")
+st.title("Analisis dan Prediksi Saham UNILEVER INDONESIA dan ASTRA INTERNASIONAL")
 st.write("Streamlit App by [Moch. Nasrullah Hasani](https://www.linkedin.com/in/moch-nasrullah-hasani/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BJotnAFwHSR2m8vXEol2eaQ%3D%3D)")
 st.divider()
 
