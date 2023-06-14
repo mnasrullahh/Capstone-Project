@@ -77,7 +77,7 @@ with st.container(): #Tren Data
         st.write(f"Dapat dilihat apakah harga penutupan mengalami tren naik atau turun seiring waktu. Jika garis '{sb2}' **cenderung naik, ini dapat diindikasikan sebagai tren positif**, dan sebaliknya jika **cenderung turun, dapat diindikasikan sebagai tren negatif**.")
 
 with st.container(): #Moving Average
-    st.subheader("Tren Volume")
+    st.subheader("Tren Harga")
     col1, col2 = st.columns([3,2])
     with col1:
         ma_day = [10, 20, 50]
@@ -248,14 +248,8 @@ with st.container(): #prediction
 
     col1, col2 = st.columns([3,7])
     with col1:
-        tab1, tab2 = st.tabs(['RMSE','MAPE'])
-        with tab1:
-            rmse = np.sqrt(np.mean(((predictions - y_test) ** 2)))
-            st.write('RMSE:', rmse)
-            st.write("Nilai RMSE dihitung sebagai akar kuadrat rata-rata dari selisih kuadrat antara nilai prediksi dan nilai aktual (y_test). RMSE memberikan ukuran rata-rata kesalahan absolut antara prediksi dan nilai aktual dalam satuan yang sama dengan data asli. Semakin rendah nilai RMSE, semakin baik performa model dalam memprediksi nilai yang akurat.")
-            st.latex(r'''{RMSE} = \sqrt(mean((y_{true} - y_{pred})^2))''')
-        with tab2:
             mape = np.mean(np.abs((predictions - y_test) / y_test)) * 100
+            st.write('*Mean Absolute Percentage Error*')
             st.write('MAPE:', mape)
             st.write("Nilai MAPE dihitung sebagai rata-rata persentase kesalahan absolut relatif terhadap nilai aktual. MAPE memberikan ukuran persentase kesalahan rata-rata dari prediksi model. Semakin rendah nilai MAPE, semakin baik performa model dalam memprediksi persentase perubahan dengan akurat.")
             st.latex(r'''{MAPE} = mean(abs(\frac{y_{true} - y_{pred}}{y_{true}})) * 100''')
